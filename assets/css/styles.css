@@ -20,6 +20,8 @@ div .row.padding {
 
 .card {
 	padding-bottom: 20px;
+	border-radius: 12px;
+	overflow: hidden;
 }
 
 .card-deck .card {
@@ -39,12 +41,21 @@ div .row.padding {
 	padding-top: 15px;
 }
 
+.card-img-top {
+    border-radius: 12px 12px 0 0;
+}
+
 .navbar {
-	padding: .8rem;
-	position: fixed;
-    width: 100%;
-    top: 0;
-    box-shadow: 5px 10px 10px #888888;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.4rem 1rem;
+    min-height: 80px;
+}
+
+.navbar-brand img {
+    max-height: 300x;
+    width: auto;
+    border-radius: 4px;
 }
 
 .navbar-nav {
@@ -52,7 +63,8 @@ div .row.padding {
 }
 
 .nav-link {
-	font-size: 1.1em !important;
+	font-size: 1em !important;
+	padding: 0.3rem 1rem !important;
 }
 
 .bg-custom {
@@ -63,6 +75,8 @@ div .row.padding {
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
+	border-radius: 12px;
+	overflow: hidden;
 }
 
 .carousel .next {
@@ -78,12 +92,13 @@ div .row.padding {
 .carousel-inner img {
 	width: 100%;
 	height: 100%;
-	user-drag: none; 
-	user-select: none;
-	-moz-user-select: none;
 	-webkit-user-drag: none;
+	-moz-user-drag: none;
 	-webkit-user-select: none;
+	-moz-user-select: none;
 	-ms-user-select: none;
+	user-select: none;
+	border-radius: 12px;
 }
 
 .carousel-caption {
@@ -151,14 +166,13 @@ body,
 	box-shadow: 5px 10px 18px #888888;
 }
 
-.img-fluid{
-	height: 200px;
-	user-drag: none; 
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+.img-fluid, #logo, .small-logo, #img2, #logo-footer, #img3d, .carousel-inner img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .navbar-toggler {
@@ -200,12 +214,6 @@ body,
 	width: 10%;
 	height: 10%;
 	padding: 10px;
-	user-drag: none; 
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
 }
 
 .emoji::after {
@@ -274,10 +282,7 @@ body,
 }
 
 #imgdon {
-	padding: 30px;
-	padding-bottom: 0px;
-	margin: 0px;
-
+	padding-bottom: 0;
 }
 
 #first-cont {
@@ -300,12 +305,6 @@ body,
 #logo {
 	width: 20%;
 	height: 20%;
-	user-drag: none; 
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
 }
 
 #c1, #c2, #c3, #c4 {
@@ -386,12 +385,6 @@ body,
 	padding: 0px;
 	width: 100%;
 	height: 100%;
-	user-drag: none; 
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
 }
 
 #desc {
@@ -445,24 +438,12 @@ body,
 #logo-footer {
 	width: 6em;
 	height: 3.5em;
-	user-drag: none; 
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
 }
 
 #img3d {
 	text-align: center;
 	width: 20em;
 	height: 20em;
-	user-drag: none; 
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
 }
 
 /*Link list decoration*/
@@ -501,7 +482,7 @@ body,
 
 * {
     box-sizing: border-box;
-    font-family: ’Lato’, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0; 
     padding: 0;
 }
@@ -526,7 +507,7 @@ a:hover {
 
 .ft-title {
     color: black;
-    font-family: ’Merriweather’, serif;
+    font-family: 'Merriweather', serif;
     font-size: 1.375rem;
     padding-bottom: 0.625rem;
 }
@@ -658,6 +639,26 @@ a:hover {
 	.carousel-inner .carousel-item {
     height: 500px;
 	}
+
+    .navbar {
+        padding: 0.3rem 1rem;
+        min-height: 55px;
+    }
+    
+    .navbar-brand img {
+        max-height: 40px;
+    }
+    
+    #slides {
+        margin-top: 55px;
+    }
+    
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.98);
+        padding: 0.5rem;
+        border-radius: 0 0 15px 15px;
+        margin-top: 0.2rem;
+    }
 }
 
 @media (max-width: 576px){
@@ -707,4 +708,8 @@ a:hover {
     83.333% {
         content: '💜';
     }
+}
+
+.kreation-link {
+    color: orange;
 }
