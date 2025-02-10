@@ -74,6 +74,11 @@ div .row.padding {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .navbar-brand img {
+        width: 40px;  /* 增加 logo 宽度 */
+        height: auto; /* 保持宽高比 */
+    }
 }
 
 .navbar-brand img {
@@ -779,4 +784,17 @@ a:hover {
     display: block;
     max-width: 100%;
   }
+}
+
+/* 调整底部导航栏居中对齐 */
+.footer-nav {
+  display: flex;
+  justify-content: center; /* 水平居中对齐 */
+  align-items: center;    /* 垂直居中对齐 */
+  text-align: center;     /* 文字居中 */
+}
+
+.footer-nav img {
+  margin: 0 auto;        /* 图片居中 */
+  display: block;        /* 确保 margin auto 生效 */
 }
