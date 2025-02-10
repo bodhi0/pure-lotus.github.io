@@ -58,8 +58,8 @@ div .row.padding {
 	.navbar-brand {
 		order: 1;
 		margin-right: auto;
-		/* 将logo右对齐，留出空间给其他元�?*/
-		/* 确保logo在折叠菜单之�?*/
+		/* 将logo右对齐，留出空间给其他元素*/
+		/* 确保logo在折叠菜单之后*/
 	}
 
 	.navbar-toggler {
@@ -758,4 +758,25 @@ a:hover {
 
 .kreation-link {
     color: orange;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-logo-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  .footer-logo-container img {
+    margin: 10px auto;
+    display: block;
+    max-width: 100%;
+  }
 }
