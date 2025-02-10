@@ -76,21 +76,16 @@ div .row.padding {
     }
 
     .navbar-brand img {
-        width: 200px;     /* 增加到 200px 使其更清晰可见 */
-        height: auto;     /* 保持宽高比 */
-        max-height: none; /* 确保不受 max-height 限制 */
-    }
-
-    .navbar {
-        padding: 0.5rem 1rem;  /* 适当增加内边距 */
-        min-height: 60px;      /* 增加导航栏高度以适应更大的 logo */
+        width: 200px !important;     /* 使用 !important 确保这个样式生效 */
+        height: auto !important;      /* 保持宽高比 */
+        max-height: none !important;  /* 移除高度限制 */
     }
 }
 
 .navbar-brand img {
-    max-height: none;  /* 移除最大高度限制 */
-    width: 170px;     /* 设置合适的宽度 */
+    width: 170px;     /* 默认宽度 */
     height: auto;     /* 保持宽高比 */
+    max-height: none; /* 移除高度限制 */
     border-radius: 4px;
 }
 
@@ -705,12 +700,12 @@ a:hover {
 	}
 
     .navbar {
-        padding: 0.5rem 1rem;  /* 适当增加内边距 */
-        min-height: 60px;      /* 增加导航栏高度以适应更大的 logo */
+        padding: 0.2rem 1rem;
+        min-height: 50px;
     }
     
     .navbar-brand img {
-        max-height: none !important; /* 使用 !important 确保覆盖其他样式 */
+        max-height: 35px;
     }
     
     #slides {
