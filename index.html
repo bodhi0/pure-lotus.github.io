@@ -34,22 +34,21 @@
     <!-- Navigations -->
     <nav class="navbar navbar-expand-md navbar-light bg-custom sticky-top">
         <div class="container-fluid d-flex justify-content-between">
-            <!-- Logo靠左 -->
             <a href="index.html" class="navbar-brand">
-                <img src="img/logon.png" id="logo" alt="佛慧通 Logo" width="170" height="50">
+                <img src="img/logon.png" id="logo" alt="佛慧通 Logo" width="60" height="auto">
             </a>
             
-            <!-- 折叠按钮靠右 -->
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" 
+            <!-- 确保折叠按钮正确工作 -->
+            <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
                 data-target="#navbarResponsive" 
                 aria-controls="navbarResponsive" 
                 aria-expanded="false" 
-                aria-label="Toggle navigation"
-                title="导航菜单">
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- 导航菜单 -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto" id="navg">
                     <li class="nav-item">
@@ -280,10 +279,9 @@
         </div>
     </footer>
 
-    <!-- 延迟加载 JavaScript -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.slim.min.js" defer></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" defer></script>
+    <!-- 在底部添加 Bootstrap 的 JavaScript 依赖 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/scripts.js" defer></script>
 </body>
 
