@@ -49,6 +49,7 @@ div .row.padding {
 	background-color: rgba(255, 255, 255, 0.95);
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 0.4rem 1rem;
+	position: relative;
 }
 
 .navbar-brand {
@@ -686,10 +687,15 @@ a:hover {
     }
     
     .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         background: white;
         padding: 10px;
         border-radius: 0 0 8px 8px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 1000;
     }
     
     .navbar-toggler {
@@ -697,18 +703,21 @@ a:hover {
         border: 1px solid rgba(0,0,0,.1);
         border-radius: .25rem;
         margin-left: auto;
+        z-index: 1001;
     }
     
     .navbar-nav {
         padding: 10px 0;
+        margin: 0;
     }
     
     .nav-item {
-        padding: 5px 0;
+        padding: 5px 15px;
+        text-align: center;
     }
     
     #slides {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 }
 
