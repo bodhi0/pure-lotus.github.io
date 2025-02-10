@@ -75,10 +75,14 @@ div .row.padding {
         margin-right: auto;
     }
 
-    .navbar-brand img {
-        width: 60px !important;      /* 将宽度从 80px 减小到 60px */
+    .navbar .navbar-brand img,
+    .navbar-brand img,
+    #logo {
+        width: 60px !important;      /* 保持 60px 的宽度 */
         height: auto !important;      /* 保持宽高比 */
         max-height: none !important;  /* 移除高度限制 */
+        min-width: 60px !important;  /* 确保最小宽度 */
+        max-width: 60px !important;  /* 确保最大宽度 */
     }
 }
 
