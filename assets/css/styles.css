@@ -76,8 +76,9 @@ div .row.padding {
     }
 
     .navbar-brand img {
-        width: 40px;  /* 增加 logo 宽度 */
-        height: auto; /* 保持宽高比 */
+        width: 120px;  /* 增加宽度到 120px */
+        height: auto;  /* 保持宽高比 */
+        max-height: none; /* 覆盖之前的 max-height 限制 */
     }
 }
 
@@ -624,16 +625,22 @@ a:hover {
 
 #footer-logo-container {
     text-align: center;
+    width: 100%;
+    padding: 20px 0;
 }
 
 #logo-footer {
-    display: inline-block;
+    display: block;
     margin: 0 auto;
+    width: 100px;  /* 设置固定宽度 */
+    height: auto;  /* 保持宽高比 */
 }
 
 #footer-logo-text {
     display: block;
     text-align: center;
+    margin-top: 10px;  /* 添加一些间距 */
+    font-size: 1.2em;  /* 调整文字大小 */
 }
 
 @media only screen and (min-width: 29.8125rem /*477px*/) {
