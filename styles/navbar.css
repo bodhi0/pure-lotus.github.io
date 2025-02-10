@@ -1,6 +1,14 @@
 .navbar-logo {
-  height: 80px; /* 调整这个值来匹配您导航栏的高度 */
-  width: auto; /* 保持图片原始比例 */
-  object-fit: contain; /* 确保图片完整显示且不变形 */
-  margin: 8px 0; /* 可选：添加上下间距使logo垂直居中 */
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  margin: 8px 0;
+}
+
+/* 针对手机端的样式 */
+@media screen and (max-width: 768px) {
+  .navbar-logo {
+    height: 80px; /* 在手机端显示更大的logo */
+    margin: 6px 0; /* 适当调整间距 */
+  }
 }
