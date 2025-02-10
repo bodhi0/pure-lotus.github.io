@@ -83,7 +83,7 @@ div .row.padding {
 }
 
 .navbar-brand img {
-    width: 170px;     /* 默认宽度 */
+    width: 170px;     /* 保持默认宽度不变 */
     height: auto;     /* 保持宽高比 */
     max-height: none; /* 移除高度限制 */
     border-radius: 4px;
@@ -705,9 +705,7 @@ a:hover {
     }
     
     .navbar-brand img {
-        width: 130px !important;     /* 调整为更合适的尺寸 */
-        height: auto !important;      /* 保持宽高比 */
-        max-height: none !important;  /* 移除高度限制 */
+        max-height: 35px;
     }
     
     #slides {
