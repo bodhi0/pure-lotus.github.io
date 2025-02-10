@@ -76,16 +76,17 @@ div .row.padding {
     }
 
     .navbar-brand img {
-        width: 120px;  /* 增加宽度到 120px */
-        height: auto;  /* 保持宽高比 */
-        max-height: none; /* 覆盖之前的 max-height 限制 */
+        width: 150px;     /* 手机端稍微小一点但仍然清晰可见 */
+        height: auto;     /* 保持宽高比 */
+        max-height: none; /* 确保不受 max-height 限制 */
     }
 }
 
 .navbar-brand img {
-	max-height: 200px;
-	width: auto;
-	border-radius: 4px;
+    max-height: none;  /* 移除最大高度限制 */
+    width: 170px;     /* 设置合适的宽度 */
+    height: auto;     /* 保持宽高比 */
+    border-radius: 4px;
 }
 
 .navbar-nav {
