@@ -76,14 +76,14 @@ div .row.padding {
     }
 
     .navbar-brand img {
-        width: 200px !important;     /* 使用 !important 确保这个样式生效 */
+        width: 120px !important;     /* 调整为适中的手机端宽度 */
         height: auto !important;      /* 保持宽高比 */
         max-height: none !important;  /* 移除高度限制 */
     }
 }
 
 .navbar-brand img {
-    width: 170px;     /* 默认宽度 */
+    width: 140px;     /* 调整为适中的默认宽度 */
     height: auto;     /* 保持宽高比 */
     max-height: none; /* 移除高度限制 */
     border-radius: 4px;
@@ -705,7 +705,9 @@ a:hover {
     }
     
     .navbar-brand img {
-        max-height: 35px;
+        width: 120px !important;     /* 调整为适中的手机端宽度 */
+        height: auto !important;      /* 保持宽高比 */
+        max-height: none !important;  /* 移除高度限制 */
     }
     
     #slides {
