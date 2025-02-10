@@ -76,7 +76,7 @@ div .row.padding {
     }
 
     .navbar-brand img {
-        width: 80px !important;      /* 将宽度从 100px 减小到 80px */
+        width: 60px !important;      /* 将宽度从 80px 减小到 60px */
         height: auto !important;      /* 保持宽高比 */
         max-height: none !important;  /* 移除高度限制 */
     }
